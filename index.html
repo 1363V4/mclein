@@ -1,266 +1,491 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MCLE.in</title>
-  <meta name="description" content="MCLEin is a consultancy for AI-assisted marketing processes.">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MCLE.in</title>
+        <link rel="icon" src="favicon.ico" />
+        <meta
+            name="description"
+            content="MCLEin is a consultancy for AI companies."
+        />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
 
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- ============ HEADER ============ -->
+        <header class="site-header">
+            <div class="container header__inner">
+                <a href="#top" class="brand" aria-label="MCLEin — home">
+                    <img
+                        src="assets/images/logo_mclein_transparent.png"
+                        alt="MCLEin"
+                        class="brand__logo"
+                    />
+                </a>
 
-  <!-- ============ HEADER ============ -->
-  <header class="site-header">
-    <div class="container header__inner">
-      <a href="#top" class="brand" aria-label="MCLEin — home">
-        <img src="assets/images/logo_mclein_transparent.png" alt="MCLEin" class="brand__logo">
-      </a>
+                <nav class="nav" aria-label="Primary">
+                    <ul>
+                        <li><a href="#approach">Approach</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#results">Results</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
 
-      <nav class="nav" aria-label="Primary">
-        <ul>
-          <li><a href="#approach">Approach</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#results">Results</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+                <a
+                    href="mailto:contact@mcle.in"
+                    class="button button--primary header__cta"
+                    >Book a strategy call</a
+                >
+            </div>
+        </header>
 
-      <a href="mailto:contact@mcle.in" class="button button--primary header__cta">Book a strategy call</a>
-    </div>
-  </header>
+        <main id="main">
+            <!-- ============ HERO ============ -->
+            <section id="top" class="hero">
+                <div class="container hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            <span>AI CAN DO ANYTHING...</span><br />
+                            <em class="ai-mark">except strategy.</em>
+                        </h1>
+                        <p class="hero__lede">
+                            Let AI be the motor of your company<br/> but
+                            <strong>take back the wheel.</strong>
+                        </p>
+                        <a href="#contact" class="button button--primary"
+                            >Book a strategy call</a
+                        >
+                    </div>
 
-  <main id="main">
+                    <img
+                        id="hero__image"
+                        src="assets/images/unsplash0.jpg"
+                        alt="A robot hand and a human hand"
+                        class="unsplash"
+                    />
+                </div>
+            </section>
 
-    <!-- ============ HERO ============ -->
-    <section id="top" class="hero">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <h1 class="hero__title">
-            <span>AI CAN DO ANYTHING...</span><br>
-            <em class="ai-mark">except marketing.</em>
-          </h1>
-          <p class="hero__lede">Let AI be the motor of your marketing and <strong>take the wheel.</strong></p>
-          <a href="#contact" class="button button--primary">Book a strategy call</a>
+            <!-- ============ TRUST BAR ============ -->
+            <section class="logos" aria-label="Clients">
+                <div class="container logos__inner">
+                    <p class="logos__label">Compatible with</p>
+                    <ul class="logos__list">
+                        <li class="logos__item">
+                            <img
+                                src="assets/svg/claude-color.svg"
+                                alt="Claude"
+                            />
+                        </li>
+                        <li class="logos__item">
+                            <img
+                                src="assets/svg/gemini-color.svg"
+                                alt="Gemini"
+                            />
+                        </li>
+                        <li class="logos__item">
+                            <img
+                                src="assets/svg/mistral-color.svg"
+                                alt="Grok"
+                            />
+                        </li>
+                        <li class="logos__item">
+                            <img src="assets/svg/codex-color.svg" alt="Codex" />
+                        </li>
+                        <li class="logos__item">
+                            <img
+                                src="assets/svg/deepseek-color.svg"
+                                alt="DeepSeek"
+                            />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ============ APPROACH ============ -->
+            <section id="approach" class="approach section--surface">
+                <div class="container approach__inner">
+                    <div class="media media--medium" role="img">
+                        <img
+                            src="assets/images/unsplash1.jpg"
+                            alt="A horse logo in front of a car"
+                            class="unsplash"
+                        />
+                    </div>
+
+                    <div class="approach__content">
+                        <h2>Strategy is the steering wheel</h2>
+                        <p>
+                            AI can analyze the market, write the ads,
+                            personalise your product...
+                            <span class="ai-mark"
+                                >and still fail to convert customers</span
+                            >.
+                        </p>
+                        <p class="text-muted">
+                            <b>MCLEin</b> pairs that raw capability with a brand
+                            new strategy framework, so your campaigns move at
+                            machine speed without losing the plot.
+                        </p>
+                        <ul class="checklist">
+                            <li>Strategic clarity</li>
+                            <li>Coaching &amp; Training</li>
+                            <li>Custom AI harnesses</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ SERVICES ============ -->
+            <section id="services" class="services">
+                <div class="container">
+                    <h2>Where we take the wheel</h2>
+                    <div class="services__grid">
+                        <article class="service-card">
+                            <h3>AI Sales Strategy</h3>
+                            <p>
+                                Define positioning, channels, and KPIs with our
+                                exclusive model.
+                            </p>
+                        </article>
+                        <article class="service-card">
+                            <h3>Automation &amp; Operations</h3>
+                            <p>Wire your own AI tools with our custom harnesses.</p>
+                        </article>
+                        <article class="service-card">
+                            <h3>Campaign Optimisation</h3>
+                            <p>
+                                Continuous testing and tuning with live
+                                dashboards.
+                            </p>
+                        </article>
+                        <article class="service-card">
+                            <h3>Brand &amp; Governance</h3>
+                            <p>
+                                Keep all of your assets on brand,
+                                and on message.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ FULL-BLEED BANNER IMAGE ============ -->
+            <div
+                class="media media--banner"
+                role="img"
+                aria-label="Placeholder: team in a strategy session around a table"
+            >
+                <img
+                    src="assets/images/unsplash3.jpg"
+                    alt="Robot toys"
+                    class="unsplash"
+                />
+            </div>
+
+            <!-- ============ PROCESS ============ -->
+            <section id="process" class="process section--surface">
+                <div class="container">
+                    <h2>How an engagement runs</h2>
+                    <ol class="process__list">
+                        <li>
+                            <span class="process__num">01</span>
+                            <h3>Discover</h3>
+                            <p>
+                                Audit your stack, your data, and find
+                                where your current strategy fails.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="process__num">02</span>
+                            <h3>Design</h3>
+                            <p>
+                                Build the strategy with us, then choose the AI
+                                tools you need.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="process__num">03</span>
+                            <h3>Deploy</h3>
+                            <p>
+                                Implement, integrate, and train your team to run
+                                it without us.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="process__num">04</span>
+                            <h3>Drive</h3>
+                            <p>
+                                Monitor, optimise, and scale what's working with
+                                live dashboards.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- ============ RESULTS ============ -->
+            <section id="results" class="results">
+                <div class="container">
+                    <h2>What changes</h2>
+
+                    <!-- Illustrative figures — replace with verified client metrics before publishing -->
+                    <div class="results__stats">
+                        <div class="stat">
+                            <p class="stat__num">4×</p>
+                            <p class="stat__label">
+                                more efficiency on AI tools
+                            </p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat__num">75%</p>
+                            <p class="stat__label">
+                                reduction in token consumption
+                            </p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat__num">2 weeks</p>
+                            <p class="stat__label">
+                                to first measurable result
+                            </p>
+                        </div>
+                    </div>
+
+                    <blockquote class="testimonial">
+                        <p>
+                            "<b>MCLEin</b> allowed us to find our
+                            product-market-fit in just a few sessions."
+                        </p>
+                        <footer>— CEO, consumer service software</footer>
+                    </blockquote>
+                </div>
+            </section>
+
+            <!-- ============ ABOUT ============ -->
+            <section id="about" class="about section--surface">
+                <div class="container about__inner">
+                    <div class="about__content">
+                        <h2>About MCLEin</h2>
+                        <p>
+                            <b>MCLEin</b> was founded by consultants who kept
+                            watching good AI tools get pointed at bad strategy.
+                            We started the firm to fix the order of operations:
+                            think first, automate second.
+                        </p>
+                        <p class="text-muted">
+                            Today we work with leaders who want the
+                            speed of AI without handing it the wheel.
+                        </p>
+                    </div>
+
+                    <div class="media media--medium" role="img">
+                        <img
+                            src="assets/images/unsplash2.jpg"
+                            alt="Human hand over a computer"
+                            class="unsplash"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ CONTACT / CTA ============ -->
+            <section id="contact" class="cta">
+                <div class="container cta__inner">
+                    <h2>Ready to take the wheel?</h2>
+                    <p>
+                        Tell us where you are stuck.
+                        <span class="ai-mark ai-mark--invert"
+                            >We will help</span
+                        >.
+                    </p>
+                    <a
+                        href="mailto:contact@mcle.in"
+                        class="button button--invert"
+                        >Get in touch</a
+                    >
+                    <p class="cta__meta">contact@mcle.in — Lille, France</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- ============ FOOTER ============ -->
+        <footer class="site-footer">
+            <div class="container footer__inner">
+                <div class="footer__brand">
+                    <img
+                        src="assets/images/logo_mclein_transparent.png"
+                        alt="MCLEin"
+                        class="brand__logo brand__logo--footer"
+                    />
+                    <p class="text-muted">Strategy first. AI second.</p>
+                </div>
+
+                <nav class="footer__nav" aria-label="Footer">
+                    <ul>
+                        <li><a href="#approach">Approach</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#results">Results</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer__legal">
+                    <button type="button" popovertarget="privacy-popover">
+                        Privacy Policy
+                    </button>
+                    <button type="button" popovertarget="legal-popover">
+                        Legal Notice
+                    </button>
+                    <button type="button" popovertarget="attributions-popover">
+                        Attributions
+                    </button>
+                </div>
+            </div>
+
+            <div class="container footer__bottom">
+                <p class="text-muted">
+                    &copy; 2026 MCLEin. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <!-- ============ LEGAL POPOVERS (native Popover API) ============ -->
+        <div
+            id="privacy-popover"
+            popover
+            class="popover"
+            role="dialog"
+            aria-labelledby="privacy-title"
+        >
+            <h2 id="privacy-title">Privacy Policy</h2>
+            <p>
+                <b>MCLEin</b> does not use cookies, tracking pixels, or
+                third-party analytics on this site. Nothing is collected simply
+                by visiting these pages.
+            </p>
+            <p>
+                If you contact us by email, we use the details you provide only
+                to reply to you. We do not sell or share that information with
+                anyone.
+            </p>
+            <p>
+                Questions about your data can be sent to
+                <a href="mailto:contact@mcle.in">contact@mcle.in</a>.
+            </p>
+            <button
+                type="button"
+                popovertarget="privacy-popover"
+                popovertargetaction="hide"
+                class="popover__close"
+            >
+                Close
+            </button>
         </div>
 
-        <img id="hero__image" src="assets/images/unsplash0.jpg" alt="A robot hand and a human hand" class="unsplash"/>
-      </div>
-    </section>
-
-    <!-- ============ TRUST BAR ============ -->
-    <section class="logos" aria-label="Clients">
-      <div class="container logos__inner">
-        <p class="logos__label">Compatible with</p>
-        <ul class="logos__list">
-          <li class="logos__item"><img src="assets/svg/claude-color.svg" alt="Claude"></li>
-          <li class="logos__item"><img src="assets/svg/gemini-color.svg" alt="Gemini"></li>
-          <li class="logos__item"><img src="assets/svg/mistral-color.svg" alt="Grok"></li>
-          <li class="logos__item"><img src="assets/svg/codex-color.svg" alt="Codex"></li>
-          <li class="logos__item"><img src="assets/svg/deepseek-color.svg" alt="DeepSeek"></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ============ APPROACH ============ -->
-    <section id="approach" class="approach section--surface">
-      <div class="container approach__inner">
-        <div class="media media--medium" role="img">
-          <img src="assets/images/unsplash1.jpg" alt="A horse logo in front of a car" class="unsplash"/>
+        <div
+            id="legal-popover"
+            popover
+            class="popover"
+            role="dialog"
+            aria-labelledby="legal-title"
+        >
+            <h2 id="legal-title">Legal Notice</h2>
+            <p><b>MCLEin</b> — SIRET: 93499670300013.</p>
+            <p>Publication director: MCLEin. Hosting provider: OVH.</p>
+            <button
+                type="button"
+                popovertarget="legal-popover"
+                popovertargetaction="hide"
+                class="popover__close"
+            >
+                Close
+            </button>
         </div>
 
-        <div class="approach__content">
-          <h2>Strategy is the steering wheel</h2>
-          <p>AI can analyze the market, write the ad copy, personalise your emails... <span class="ai-mark">and still fail to convert customers</span>.</p>
-          <p class="text-muted"><b>MCLEin</b> pairs that raw capability with a brand new marketing framework, so your campaigns move at machine speed without losing the plot.</p>
-          <ul class="checklist">
-            <li>Strategic clarity</li>
-            <li>Human judgment</li>
-            <li>Custom AI harness</li>
-          </ul>
+        <div
+            id="attributions-popover"
+            popover
+            class="popover"
+            role="dialog"
+            aria-labelledby="attributions-title"
+        >
+            <h2 id="attributions-title">Attributions</h2>
+            <p>
+                Typefaces: Cormorant Garamond and Montserrat, both distributed
+                through Google Fonts under the SIL Open Font License.
+            </p>
+            <p>Photography: sourced from Unsplash contributors:</p>
+            <ul>
+                <li>
+                    Photo by
+                    <a
+                        href="https://unsplash.com/@grievek1610begur?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Kevin Grieve</a
+                    >
+                    on
+                    <a
+                        href="https://unsplash.com/photos/blue-yellow-and-red-lego-toys-alNlyjzup80?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Unsplash</a
+                    >
+                </li>
+                <li>
+                    Photo by
+                    <a
+                        href="https://unsplash.com/@cashmacanaya?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Cash Macanaya</a
+                    >
+                    on
+                    <a
+                        href="https://unsplash.com/photos/robot-and-human-hands-reaching-toward-each-other-X9Cemmq4YjM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Unsplash</a
+                    >
+                </li>
+                <li>
+                    Photo by
+                    <a
+                        href="https://unsplash.com/@jess33mx?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Jose Vazquez</a
+                    >
+                    on
+                    <a
+                        href="https://unsplash.com/photos/person-in-black-long-sleeve-shirt-using-macbook-pro-Q5RBHz9cu1A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Unsplash</a
+                    >
+                </li>
+                <li>
+                    Photo by
+                    <a
+                        href="https://unsplash.com/@svbalazs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Balázs</a
+                    >
+                    on
+                    <a
+                        href="https://unsplash.com/photos/silver-mustang-horse-emblem-on-a-dark-honeycomb-grille-w0fyRzDWfDw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Unsplash</a
+                    >
+                </li>
+            </ul>
+            <button
+                type="button"
+                popovertarget="attributions-popover"
+                popovertargetaction="hide"
+                class="popover__close"
+            >
+                Close
+            </button>
         </div>
-      </div>
-    </section>
-
-    <!-- ============ SERVICES ============ -->
-    <section id="services" class="services">
-      <div class="container">
-        <h2>Where we take the wheel</h2>
-        <div class="services__grid">
-          <article class="service-card">
-            <h3>AI Marketing Strategy</h3>
-            <p>Define positioning, channels, and KPIs with our exclusive model.</p>
-          </article>
-          <article class="service-card">
-            <h3>Automation &amp; Operations</h3>
-            <p>Wire up the AI tools with custom harnesses.</p>
-          </article>
-          <article class="service-card">
-            <h3>Campaign Optimisation</h3>
-            <p>Continuous testing and tuning with live dashboards.</p>
-          </article>
-          <article class="service-card">
-            <h3>Brand &amp; Governance</h3>
-            <p>Keep every AI-generated asset on-brand, on-brief, and on-message.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ FULL-BLEED BANNER IMAGE ============ -->
-    <div class="media media--banner" role="img" aria-label="Placeholder: team in a strategy session around a table">
-  		<img src="assets/images/unsplash3.jpg" alt="Robot toys" class="unsplash"/>
-    </div>
-
-    <!-- ============ PROCESS ============ -->
-    <section id="process" class="process section--surface">
-      <div class="container">
-        <h2>How an engagement runs</h2>
-        <ol class="process__list">
-          <li>
-            <span class="process__num">01</span>
-            <h3>Discover</h3>
-            <p>Audit your stack, your data, and what "good" marketing means for your business.</p>
-          </li>
-          <li>
-            <span class="process__num">02</span>
-            <h3>Design</h3>
-            <p>Build the strategy with us, then choose the AI tools you need.</p>
-          </li>
-          <li>
-            <span class="process__num">03</span>
-            <h3>Deploy</h3>
-            <p>Implement, integrate, and train your team to run it without us.</p>
-          </li>
-          <li>
-            <span class="process__num">04</span>
-            <h3>Drive</h3>
-            <p>Monitor, optimise, and scale what's working with live dashboards.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ============ RESULTS ============ -->
-    <section id="results" class="results">
-      <div class="container">
-        <h2>What changes</h2>
-
-        <!-- Illustrative figures — replace with verified client metrics before publishing -->
-        <div class="results__stats">
-          <div class="stat">
-            <p class="stat__num">4×</p>
-            <p class="stat__label">more efficiency on AI tools</p>
-          </div>
-          <div class="stat">
-            <p class="stat__num">75%</p>
-            <p class="stat__label">reduction in token consumption</p>
-          </div>
-          <div class="stat">
-            <p class="stat__num">2 weeks</p>
-            <p class="stat__label">to first measurable result</p>
-          </div>
-        </div>
-
-        <blockquote class="testimonial">
-          <p>"<b>MCLEin</b> allowed us to find our product-market-fit in just a few sessions."</p>
-          <footer>— CEO, consumer service software</footer>
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- ============ ABOUT ============ -->
-    <section id="about" class="about section--surface">
-      <div class="container about__inner">
-        <div class="about__content">
-          <h2>About MCLEin</h2>
-          <p><b>MCLEin</b> was founded by marketers who kept watching good AI tools get pointed at bad strategy. We started the firm to fix the order of operations: think first, automate second.</p>
-          <p class="text-muted">Today we work with marketing leaders who want the speed of AI without handing it the wheel.</p>
-        </div>
-
-        <div class="media media--medium" role="img">
-    			<img src="assets/images/unsplash2.jpg" alt="Human hand over a computer" class="unsplash"/>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT / CTA ============ -->
-    <section id="contact" class="cta">
-      <div class="container cta__inner">
-        <h2>Ready to take the wheel?</h2>
-        <p>Tell us where marketing is stuck. We'll show you where AI <span class="ai-mark ai-mark--invert">actually helps</span>.</p>
-        <a href="mailto:contact@mcle.in" class="button button--invert">Get in touch</a>
-        <p class="cta__meta">contact@mcle.in — Lille, France</p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <img src="assets/images/logo_mclein_transparent.png" alt="MCLEin" class="brand__logo brand__logo--footer">
-        <p class="text-muted">Strategy first. AI second.</p>
-      </div>
-
-      <nav class="footer__nav" aria-label="Footer">
-        <ul>
-          <li><a href="#approach">Approach</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#results">Results</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="footer__legal">
-        <button type="button" popovertarget="privacy-popover">Privacy Policy</button>
-        <button type="button" popovertarget="legal-popover">Legal Notice</button>
-        <button type="button" popovertarget="attributions-popover">Attributions</button>
-      </div>
-    </div>
-
-    <div class="container footer__bottom">
-      <p class="text-muted">&copy; 2026 MCLEin. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- ============ LEGAL POPOVERS (native Popover API) ============ -->
-  <div id="privacy-popover" popover class="popover" role="dialog" aria-labelledby="privacy-title">
-    <h2 id="privacy-title">Privacy Policy</h2>
-    <p><b>MCLEin</b> does not use cookies, tracking pixels, or third-party analytics on this site. Nothing is collected simply by visiting these pages.</p>
-    <p>If you contact us by email, we use the details you provide only to reply to you. We do not sell or share that information with anyone.</p>
-    <p>Questions about your data can be sent to <a href="mailto:contact@mcle.in">contact@mcle.in</a>.</p>
-    <button type="button" popovertarget="privacy-popover" popovertargetaction="hide" class="popover__close">Close</button>
-  </div>
-
-  <div id="legal-popover" popover class="popover" role="dialog" aria-labelledby="legal-title">
-    <h2 id="legal-title">Legal Notice</h2>
-    <p><b>MCLEin</b> — SIRET: 93499670300013.</p>
-    <p>Publication director: MCLEin. Hosting provider: OVH.</p>
-    <button type="button" popovertarget="legal-popover" popovertargetaction="hide" class="popover__close">Close</button>
-  </div>
-
-  <div id="attributions-popover" popover class="popover" role="dialog" aria-labelledby="attributions-title">
-    <h2 id="attributions-title">Attributions</h2>
-    <p>Typefaces: Cormorant Garamond and Montserrat, both distributed through Google Fonts under the SIL Open Font License.</p>
-    <p>Photography: sourced from Unsplash contributors:</p>
-    <ul>
-      <li>Photo by <a href="https://unsplash.com/@grievek1610begur?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Grieve</a> on <a href="https://unsplash.com/photos/blue-yellow-and-red-lego-toys-alNlyjzup80?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></li>
-      <li>Photo by <a href="https://unsplash.com/@cashmacanaya?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cash Macanaya</a> on <a href="https://unsplash.com/photos/robot-and-human-hands-reaching-toward-each-other-X9Cemmq4YjM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></li>
-      <li>Photo by <a href="https://unsplash.com/@jess33mx?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jose Vazquez</a> on <a href="https://unsplash.com/photos/person-in-black-long-sleeve-shirt-using-macbook-pro-Q5RBHz9cu1A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></li>
-      <li>Photo by <a href="https://unsplash.com/@svbalazs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Balázs</a> on <a href="https://unsplash.com/photos/silver-mustang-horse-emblem-on-a-dark-honeycomb-grille-w0fyRzDWfDw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></li>
-    </ul>
-    <button type="button" popovertarget="attributions-popover" popovertargetaction="hide" class="popover__close">Close</button>
-  </div>
-
-</body>
+    </body>
 </html>

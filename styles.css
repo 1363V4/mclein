@@ -267,7 +267,7 @@ section {
 /* -------------------- Hero -------------------- */
 
 #top {
-	padding-block: 0;
+	padding-block: 1rem;
 }
 
 .hero__inner {
